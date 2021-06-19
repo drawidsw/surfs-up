@@ -15,8 +15,8 @@ Data is available in **sqllite** database (*hawaii.sqllite*). A sqllite database
 ### Usage of Sqlalchemy ORM
 
 There are two ways to retrieve data from a relational database in most applications.
-* Execute sql queries directly - this can be done by calling the **execute** function on the **engine** object created by sqlalchemy when it connects to the database.
-* Use ORM - ORM stands for *Object Relationship mapping*. The advantage of using ORM is that it allows a developer to define schemas, data types and relationships between entities **all within code**. ORM offers equivalent functions such as **query**, and **filter** for SQL clauses allowing the developer to write queries on the entities that represent various tables and columns in the database. In this exercise, ORM framework is used to query the tables.
+* **Execute sql queries directly** - this can be done by calling the **execute** function on the **engine** object created by sqlalchemy when it connects to the database.
+* **Use ORM** - ORM stands for *Object Relationships Mapping*. The advantage of using ORM is that it allows a developer to define schemas, data types and relationships among entities **all within code**. ORM also offers equivalent functions - such as **query**, and **filter** - for SQL clauses allowing the developer to write queries on the entities that represent various tables and columns in the database. In this exercise, the ORM framework is used to query the tables.
 
 ## Results
 
@@ -45,4 +45,4 @@ The following three differences are noted between June and December temperatures
 
 ### First query:
 
-In this query, we will find and plot temperatures recorded by various stations for the months of June and December.
+In this query, we will find and plot temperatures recorded by various stations for the months of June and December. This query will tell us the variance in measurements across all stations.
