@@ -20,35 +20,18 @@ There are two ways to retrieve data from a relational database in most applicati
 
 ## Results
 
-### June Temperatures:
+To retrieve the temperatures for June, a query was ran to filter out all temperatures with data matching a pattern like "%-06-%" on the **date** column. A similar query for December was run with pattern matching like "%-12-%" on the **date** column. The results are in the table below.
 
-To retrieve the temperatures for June, a query was ran to filter out all temperatures with data matching a pattern like "%-06-%". The results are in the table below.
-
-| Stat  | Value       |
-| ----- | ----------- | 
-| count	| 1700.000000 |
-|mean |	74.944118 |
-|std |	3.257417 |
-|min |	64.000000 |
-|25% |	73.000000 |
-|50% |	75.000000 |
-|75% |	77.000000 |
-|max |	85.000000 |
-
-### December Temperatures:
-
-To retrieve the temperatures for June, a query was ran to filter out all temperatures with data matching a pattern like "%-06-%". The results are in the table below.
-
-| Stat  | Value       |
-| ----- | ----------- | 
-| count	| 1517.000000 |
-|mean |	71.041529 |
-|std |	3.745920 |
-|min |	56.000000 |
-|25% |	69.000000 |
-|50% |	71.000000 |
-|75% |	74.000000 |
-|max |	83.000000 |
+| Stat  | June       | December |
+| ----- | ---------- | ---------|
+| count	| 1700.000000 | 1517.000000 |
+|mean |	74.944118 | 71.041529 |
+|std |	3.257417 | 3.745920 |
+|min |	64.000000 | 56.000000 |
+|25% |	73.000000 | 69.000000 |
+|50% |	75.000000 | 71.000000 |
+|75% |	77.000000 | 74.000000 |
+|max |	85.000000 | 83.000000 |	
 
 ### Analysis
 
