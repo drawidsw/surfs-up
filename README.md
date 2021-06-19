@@ -61,6 +61,6 @@ A similar query was used for December temperatures. The results were loaded in a
 
 Here, we will plot the year over year trend for mean June and December temperatures. Instead of using sql functions (since extracting year out of a string format datetime and aggregating over it is hard), dataframes were used instead. The following plot shows annual trend in temperatures in months of June and December.
 
-![image_name](Annual_Trend.png)
+![image_name](Annual_trend.png)
 
 
