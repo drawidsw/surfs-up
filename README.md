@@ -43,6 +43,21 @@ The following three differences are noted between June and December temperatures
 
 ## Further Analysis
 
-### First query:
+### First Analysis:
 
-In this query, we will find and plot temperatures recorded by various stations for the months of June and December. This query will tell us the variance in measurements across all stations.
+In this query, we will find and plot temperatures recorded by various stations for the months of June and December. This query will tell us the variance in measurements across all stations. To get the June temperatures, the following query was used:
+
+```
+june_temps = session.query(Measurement.station, func.avg(Measurement.tobs)).\
+                     group_by(Measurement.station).\
+                     filter(Measurement.date.like('%-06-%'))
+```
+
+A similar query was used for December temperatures. The results were loaded in a dataframe and plotted. The following plot shows variations across stations measurements. The pattern is consistent, i.e. stations recording higher reading do so in both June and December and so do stations recording lower reading. The plot also shows clear difference between June and December indicating December temperatures are indeed 3 F lower.
+
+![image_name](Stations.png)
+
+### Second Analysis:
+
+Here, we will plot the year over year trend for mean June and December temperatures.
+
