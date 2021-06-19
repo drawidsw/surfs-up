@@ -24,6 +24,8 @@ There are two ways to retrieve data from a relational database in most applicati
 
 To retrieve the temperatures for June, a query was ran to filter out all temperatures with data matching a pattern like "%-06-%". The results are in the table below.
 
+| Stat  | Value       |
+| ----- | ----------- | 
 | count	| 1700.000000 |
 |mean |	74.944118 |
 |std |	3.257417 |
@@ -32,3 +34,32 @@ To retrieve the temperatures for June, a query was ran to filter out all tempera
 |50% |	75.000000 |
 |75% |	77.000000 |
 |max |	85.000000 |
+
+### December Temperatures:
+
+To retrieve the temperatures for June, a query was ran to filter out all temperatures with data matching a pattern like "%-06-%". The results are in the table below.
+
+| Stat  | Value       |
+| ----- | ----------- | 
+| count	| 1517.000000 |
+|mean |	71.041529 |
+|std |	3.745920 |
+|min |	56.000000 |
+|25% |	69.000000 |
+|50% |	71.000000 |
+|75% |	74.000000 |
+|max |	83.000000 |
+
+### Analysis
+
+The following three differences are noted between June and December temperatures:
+
+* The mean temperature in June is higher than December - 74.9 F versus 71 F.
+* The minimum temperature in June is higher than in December - 64 F versus 56 F
+* The maximum temperature in June is slightly higher than in December - 85 F versus 83 F
+
+## Further Analysis
+
+### First query:
+
+In this query, we will find and plot temperatures recorded by various stations for the months of June and December.
